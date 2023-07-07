@@ -133,6 +133,7 @@ public class DriverFactory
 	
 	public static String getScreenshot()
 	{
+		
 		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 		String path = System.getProperty("user.dir") + "/screenshot/" + System.currentTimeMillis() + ".png";
 		File destination = new File(path);
