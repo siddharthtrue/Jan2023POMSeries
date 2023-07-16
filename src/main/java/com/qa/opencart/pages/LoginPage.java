@@ -20,7 +20,7 @@ public class LoginPage
 	private WebDriver driver;
 	private ElementUtils eleUtil;
 
-//  1. Constructor of the page class
+// 1. Constructor of the page class
 	public LoginPage(WebDriver driver)
 	{
 		this.driver = driver;
