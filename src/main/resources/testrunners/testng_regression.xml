@@ -23,14 +23,14 @@
 		</classes>
 	</test>
 
-
+-->
  	<test name="Accounts Page Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.opencart.tests.AccountsPageTest" />
 		</classes>
 	</test>
-
+<!-- 
 	<test name="Search Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
