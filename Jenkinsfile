@@ -57,19 +57,19 @@ pipeline
             }
         }
         
-        stage('Publish Extent Report')
-        {
-            steps
-            {
-				publishHTML([allowMissing: false,
-                alwaysLinkToLastBuild: false, 
-                keepAll: true, 
-                reportDir: 'reports', 
-                reportFiles: 'TestExecutionReport.html', 
-                reportName: 'HTML Regression Extent Report', 
-                reportTitles: ''])
-            }
-        }
+//        stage('Publish Extent Report')
+//        {
+//            steps
+//            {
+//				publishHTML([allowMissing: false,
+//                alwaysLinkToLastBuild: false, 
+//                keepAll: true, 
+//                reportDir: 'reports', 
+//                reportFiles: 'TestExecutionReport.html', 
+//                reportName: 'HTML Regression Extent Report', 
+//                reportTitles: ''])
+//            }
+//        }
         
         stage("Deploy to Stage")
         {
