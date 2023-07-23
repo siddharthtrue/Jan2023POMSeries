@@ -41,7 +41,7 @@ pipeline
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
                 {
                     git 'https://github.com/siddharthtrue/Jan2023POMSeries.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/main/resources/testrunners/testng_regression.xml"
+                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/main/resources/testrunners/testng_regression.xml"
                 }
             }
         }
@@ -86,7 +86,7 @@ pipeline
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
                 {
                     git 'https://github.com/siddharthtrue/Jan2023POMSeries.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/main/resources/testrunners/testng_sanity.xml"                    
+                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/main/resources/testrunners/testng_sanity.xml"                    
                 }
             }
         }
